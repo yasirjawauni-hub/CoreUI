@@ -305,7 +305,7 @@ local reporter = nil
 
 if not requestsDisabled and not useStudio then
 	local ok, fetched = pcall(game.HttpGet, game,
-		"https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/reporter.lua")
+		"https://raw.githubusercontent.com/yasirjawauni-hub/CoreUI/refs/heads/main/Reporter.lua")
 	if ok and #fetched > 0 then
 		local execOk, Analytics = pcall(function() return (loadstring(fetched))() end)
 		if execOk and Analytics then
